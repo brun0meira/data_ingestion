@@ -27,6 +27,8 @@ Para rodar este projeto, é necessário ter os seguintes pré-requisitos configu
 ### Variáveis de Ambiente
 Certifique-se de configurar as variáveis de ambiente corretamente, criando um arquivo `.env` na raiz do projeto com as seguintes definições:
 
+O arquivo `.env` não deve ser publicado publicamente no GitHub. No entanto, como neste caso ele é uma dependência importante para a execução do projeto, e suas definições são apenas para testes em localhost com um objetivo exclusivamente acadêmico, compartilhar o arquivo `.env` publicamente não representa um risco significativo.
+
 ```env
 MINIO_ENDPOINT=localhost:9000
 MINIO_ACCESS_KEY=minioadmin
@@ -92,6 +94,8 @@ Este arquivo define os serviços Docker para MinIO e ClickHouse.
 
 ### 5.8 Configurações adicionais ClickHouse (`users.xml`)
 Arquivo de configuração personalizado para usuários e perfis no ClickHouse.
+
+O ideal é que o arquivo `users.xml` presente neste repositório não seja publicado publicamente no GitHub. Porém, neste caso específico, como foi apresentado como parte de um desafio de configuração adicional do Clickhouse, e o projeto é destinado a testes em localhost com um propósito puramente acadêmico, compartilhar esse arquivo publicamente não representa riscos significativos, especialmente porque, sem ele, não seria possível acessar as senhas do banco e os usuários definidos.
 
 - **`bruno`**: Usuário configurado com permissões e quota padrão.
 - **`max_memory_usage`**: Limite de uso de memória configurado para 10GB.
